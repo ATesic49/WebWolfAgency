@@ -40,20 +40,30 @@ nav{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding:1vh 5% 1vh 2.5%;
+    padding:1vh 5% 1vh 8vh;
     z-index: 1;
     max-height: 12vh;
     max-height: 12svh;
 }
+.underline::after{
+    position: absolute;
+    content: '';
+    bottom:10%;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
 .pozadina-nava{
     background-image:linear-gradient(90deg,#0c1445 ,#4c408e);
-    transition-property:background-image ;
     transition: .5s;
+    box-shadow: 0 0 20px black;
 
 }
 nav img{
-height: 75px;
-max-height:5vw;
+min-height: 25px;
+height:5vw;
+max-height: 75px;
 z-index: 2;
 }
 nav img:hover{
@@ -323,17 +333,22 @@ transform: translateZ(-50px) scale(6);
 /* WRAPPER TEXT */
 
 .wrapper .text{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    display: flex;
     width: 70%;
-    transform: translateZ(-100px) scale(11);
-    z-index: 5;
-    
+    transform: translateZ(-100px) scale(11);    
+    text-align: center;
+    align-items: center;
 }
 .wrapper .text h2{
-        position: absolute;
-    top: 40%;
+    position: absolute;
+    top: 50%;
     left: 30%;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: clamp(2rem,5vw,10rem);
     text-align: center;
     color: white;
     user-select: none;
@@ -348,13 +363,15 @@ transform: translateZ(-50px) scale(6);
     z-index: 5;
 }
 .wrapper .click a{
+
 position: absolute;
 top: 70%;
-left: 55%;
-padding:4vh 3vh;
-max-height:40px;
-background-image: linear-gradient(90deg, hsl(39, 85%, 17%), hsl(39, 96%, 45%));
-width: 10%;
+left: 59%;
+transform: translateX(-50%);
+padding:2.3vh 3vh;
+background-color :hsl(39, 96%, 45%);
+box-shadow: 0 0 5px #4c408e;
+border-radius: 20px;
 font-weight: 900;
 font-size: 1rem;
 text-align: center;
@@ -363,20 +380,160 @@ user-select: none;
 font-family: 'Josefin Sans', sans-serif;
 text-align: center;
 text-decoration: none;
-transition-property: background-image;
 text-align: center;
 justify-content: center;
 align-items: center;
 display: flex;
-transition: .5s;
 display: none;
 }
 .wrapper .click a:hover{
-background-image: linear-gradient(90deg, hsl(39, 96%, 45%), hsl(39, 85%, 17%));
-
-
+cursor: pointer;
+color: #4c408e;
+background-color: white;
 }
 
 /* WRAPPER CLICK */
 /* WRAPPER */
+
+/* ABOUT */
+.about{
+    background-color: hsl(0, 0%, 98.7%);
+    padding: 30vh 8vh 0 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.about .text h1{
+    position: relative;
+    width: fit-content;
+    padding-block: .5vh;
+    font-size: clamp(20px,2.5vw,200px);
+
+}
+.about .text h1::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+.about .text p{
+    line-height: clamp(25px,4vh,4vw);
+    margin: 10vh 5% 5vh 5%;
+    font-size: clamp(12px,1.5vw,100px);
+}
+.about .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about .logo img{
+    width: 7.5%;
+    min-width: 50px;
+    filter: invert(24%) sepia(26%) saturate(2333%) hue-rotate(218deg) brightness(97%) contrast(88%)drop-shadow(0 0px 1.5px black);
+}
+.about .logo img:hover{
+    cursor: pointer;
+}
+/* ABOUT */
+/* SERVICE */
+.services{
+    background-color: hsl(0, 0%, 98.7%);
+    padding: 30vh 8vh;
+    width: 100%;
+}
+.services .text h1{
+    position: relative;
+    width: fit-content;
+    padding-block: .5vh;
+    font-size: clamp(20px,2.5vw,200px);
+
+}
+.services .text h1::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+.services .text p{
+    line-height: clamp(25px,4vh,4vw);
+    margin: 10vh 5% 5vh 5%;
+    font-size: clamp(12px,1.5vw,100px);
+}
+.services .packages{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.services .packages .package{
+    box-shadow: 0 0 5px #0c1445;
+    margin-top:10vh; 
+    width: 20%;
+    aspect-ratio: 1/1.61;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    min-width: 200px;
+}
+.services .packages .package .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .packages .package .logo img{
+    width: 27.5%;
+    padding-top: 7.5%;
+    filter: invert(7%) sepia(58%) saturate(3241%) hue-rotate(226deg) brightness(98%) contrast(103%);
+}
+.services .packages .package .naslov{
+    width: 100%;
+    text-align: center;
+}
+.services .packages .package .naslov h1{
+    font-style:italic;
+    font-size:clamp(2.5vh,2vw,3000px);
+    color: #0c1445;
+}
+.services .packages .package .naslov h3{
+    font-style:italic;
+    margin-top: 3%;
+    font-size:clamp(2vh,1.75vw,3000px);
+    color: #0c1445;
+
+
+}
+.services .packages .package .stvari{
+    width: 100%;
+    height: 65%;
+    background-image: url(/img/svg-path.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 25% 0 0 0 ;
+
+}
+.services .packages .package .stvari ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:white
+}
+/* SERVICE */
 

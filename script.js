@@ -86,7 +86,7 @@ if(wrapper.scrollTop >=wrapper.getBoundingClientRect().height*.3 && m!=='popunje
 })
 
 document.querySelector('.wrapper .click a').addEventListener('click',()=>{
-    document.querySelector('.lmaolmaolmao').scrollIntoView()
+    document.querySelector('.about').scrollIntoView()
 })
 window.addEventListener('scroll',()=>{
     if(wrapper.getBoundingClientRect().top * -1>=wrapper.getBoundingClientRect().height){
@@ -96,6 +96,72 @@ window.addEventListener('scroll',()=>{
 
     }
 })
+
+
+
+
+
+// NAV
+const li =nav.querySelectorAll('ul li')
+li.forEach(element=>{
+    element.addEventListener('click',()=>{
+        li.forEach(e=>{
+            e.classList.remove('underline')
+        })
+        element.classList.add('underline')
+    })
+})
+
+
+
+
+
+li[0].addEventListener('click',()=>{
+    document.querySelector('.about').scrollIntoView()
+})
+li[1].addEventListener('click',()=>{
+    document.querySelector('.services').scrollIntoView()
+
+})
+document.querySelector('.wrapper .click a').addEventListener('click',()=>{
+    document.querySelector('.about').scrollIntoView()
+})
+document.querySelector('nav img').addEventListener('click',()=>{
+    document.querySelector('.wrapper').scrollIntoView()
+    li.forEach(e=>{
+        e.classList.remove('underline')
+    })
+})
+// NAV
+
+// IS IN WIEWPORT
+document.addEventListener('scroll',()=>{
+if(isInViewport(wrapper)){
+        li.forEach(e=>{
+        e.classList.remove('underline')
+    })
+}
+if(isInViewport(document.querySelector('.about'))){
+    li.forEach(e=>{
+    e.classList.remove('underline')
+})
+li[0].classList.add('underline')
+}
+if(isInViewport(document.querySelector('.services'))){
+    li.forEach(e=>{
+    e.classList.remove('underline')
+})
+li[1].classList.add('underline')
+}
+})
+
+
+
+// IS IN WIEWPORT
+
+
+
+
 // FUNCTIONS    
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
