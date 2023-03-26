@@ -89,7 +89,7 @@ document.querySelector('.wrapper .click a').addEventListener('click',()=>{
     document.querySelector('.about').scrollIntoView()
 })
 window.addEventListener('scroll',()=>{
-    if(wrapper.getBoundingClientRect().top * -1>=wrapper.getBoundingClientRect().height){
+    if(wrapper.getBoundingClientRect().top * -1>=wrapper.getBoundingClientRect().height-20){
         nav.classList.add('pozadina-nava')
     }else{
         nav.classList.remove('pozadina-nava')
