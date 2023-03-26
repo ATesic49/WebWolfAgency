@@ -363,7 +363,6 @@ transform: translateZ(-50px) scale(6);
     z-index: 5;
 }
 .wrapper .click a{
-
 position: absolute;
 top: 70%;
 left: 59%;
@@ -371,7 +370,6 @@ transform: translateX(-50%);
 padding:2.3vh 3vh;
 background-color :hsl(39, 96%, 45%);
 box-shadow: 0 0 5px #4c408e;
-border-radius: 20px;
 font-weight: 900;
 font-size: 1rem;
 text-align: center;
@@ -392,6 +390,28 @@ color: #4c408e;
 background-color: white;
 }
 
+.wrapper .click a:hover::after{
+position: absolute;
+content: '';
+width: 100%;
+height: 2%;
+top: -20%;
+right: 0;
+background-color: white;
+animation: click .5s linear forwards;
+
+}
+.wrapper .click a:hover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2%;
+    top: 120%;
+    right: 0;
+    background-color: white;
+    animation: Bclick .5s linear forwards;
+    
+    }
 /* WRAPPER CLICK */
 /* WRAPPER */
 
@@ -488,6 +508,10 @@ background-color: white;
     overflow: hidden;
     min-width: 200px;
 }
+.services .packages .package *{
+    user-select: none;
+    -webkit-user-drag: none;
+}
 .services .packages .package .logo{
     width: 100%;
     display: flex;
@@ -501,6 +525,7 @@ background-color: white;
 }
 .services .packages .package .naslov{
     width: 100%;
+    margin-top: 2%;
     text-align: center;
 }
 .services .packages .package .naslov h1{
@@ -524,21 +549,74 @@ background-color: white;
     background-size: cover;
     box-sizing: border-box;
     padding: 25% 0 0 0 ;
-
-}
-.services .packages .package .stvari ul{
-    width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color:white
+    justify-content: baseline;
+}
+.services .packages .package .stvari .stvar{
+display: flex;
+justify-content: baseline;
+align-items: center;
+}
+.services .packages .package .stvari .stvar img{
+width: 7.5%;
+filter: invert(1);
+margin: 5% 7.5% 5% 7.5% ;
+
+}
+.services .packages .package .stvari .stvar p{
+    color: white;
+    font-style: italic;
+    font-size: clamp(1px,95%,400px);
+    font-weight: 800;
+    margin-right: 2%;
 }
 /* SERVICE */
 
 /* MEDIA */
-@media only screen and (max-width: 400px) {
 
-  }
 /* MEDIA */
+/* KEYFRAMES */
+@keyframes click {
+    0%{
+        top: -20%;
+        right: -10%;
+        width: 120%;
+        height: 2px;
+    }
+    50%{
+        top: -20%;
+        right: -10%;
+        width: 2px;
+        height: 2px;
+
+    }
+    100%{
+        right: -10%;
+        width: 2px;
+        top:0;
+        height: 100%;
+    }
+}
+@keyframes Bclick {
+    0%{
+        top: 120%;
+        left: -10%;
+        width: 120%;
+        height: 2px;
+    }
+    50%{
+        top: 120%;
+        left: -10%;
+        width: 2px;
+        height: 2px;
+
+    }
+    100%{
+        left: -10%;
+        width: 2px;
+        top:00%;
+        height: 100%;
+    }
+}
+/* KEYFRAMES */
