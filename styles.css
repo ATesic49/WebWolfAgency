@@ -502,11 +502,13 @@ color: #0c1445;
     flex-direction:row;
     justify-content: space-around;
     margin-bottom:10vh;
+    width: 100%;
 }
-.about .team .slike img{
+.about .team .slike .img{
     box-shadow: 0 0 5px #0c1445;
     margin-top:10vh; 
     width: 15%;
+    margin-inline: 2.5%;
     aspect-ratio: 1/1.61;
     border-radius: 20px;
     display: flex;
@@ -516,7 +518,44 @@ color: #0c1445;
     overflow: hidden;
     min-width: 200px;
     filter: brightness(.65);
-    object-fit:cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(/img/viber_image_2022-12-28_23-44-27-516.jpg);
+    position:relative;
+    cursor:pointer
+}
+.about .team .slike .img .hover{
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    background-color: #4c408e;
+    right:100%;
+    top: 0;
+    animation: slide-out .5s forwards;
+    pointer-events: none !important;
+}
+.about .team .slike .img .hover{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding-right: 20%;
+
+}
+.about .team .slike .img .hover h3{
+    color: white;
+    font-size: clamp(12px,1.5vw,5vh);
+}
+.about .team .slike .img .hover p{
+    font-size: clamp(10px,1.2vw,5vh);
+
+}
+.about .team .slike .img:hover .hover{
+animation: slide-in .5s forwards;
+pointer-events: none !important;
 }
 
 .about .team .slike *{
@@ -817,6 +856,39 @@ background-color: black;
         height: 100%;
     }
 }
+@keyframes slide-in {
+    0%{
+        left: 100%;
+        pointer-events: none;
 
+    }
+    85%{
+        left: 00%;
+        pointer-events: none;
+
+    }
+    100%{
+        left: 20%;
+        pointer-events: none;
+
+    }
+}
+@keyframes slide-out {
+    0%{
+        left: 20%;
+        pointer-events: none;
+
+    }
+    85%{
+        left: 0%;
+        pointer-events: none;
+
+    }
+    100%{
+        left:100%;
+        pointer-events: none;
+
+    }
+}
 
 /* KEYFRAMES */
