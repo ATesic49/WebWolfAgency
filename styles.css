@@ -50,7 +50,7 @@ nav{
     bottom:10%;
     left: 0;
     background-color: white;
-
+    height: 2px;
     width: 100%;
 }
 .pozadina-nava{
@@ -380,6 +380,7 @@ text-align: center;
 justify-content: center;
 align-items: center;
 display: flex;
+font-weight: 400;
 display: none;
 aspect-ratio: 2.2/1;
 font-size: clamp(15px,1.5vw,100px);
@@ -479,7 +480,7 @@ animation: click .5s linear forwards;
     margin-top: 10vh;
 }
 .about .team h3{
-font-size: clamp(2vh,3vw,50px);
+font-size: clamp(3vh,3.25vw,100px);
 margin-bottom: 7.5vh;
 margin-bottom: 7.5svh;
 position: relative;
@@ -681,6 +682,7 @@ aspect-ratio: 2.2/1;
     right: 0;
     background-color: #4c408e;
     animation: click .5s ease-in forwards reverse;
+
     
 }
 .services .book a:hover::before{
@@ -720,14 +722,16 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-margin-right: 10vw;
+margin-right: 5vw;
 text-align: center;
 
 }
 .services .detaljnije .stvar .levo h2{
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
     font-size:clamp(2vh,1.75vw,30px);
-    width: 100%;
+    width: 70%;
+    position: relative;
+
 
 
 
@@ -735,14 +739,13 @@ text-align: center;
 .services .detaljnije .stvar .levo img{
     width: 7vw;
     min-width: 12vh;
-    position: relative;
 }
-.services .detaljnije .stvar .levo img::after{
+.services .detaljnije .stvar .levo h2::after{
 content: '';
 position: absolute;
-top: 0;
-right: 0;
-width: 100%;
+top: 120%;
+right: 35%;
+width: 30%;
 height: 2px;
 background-color: black;
 }
@@ -750,10 +753,10 @@ background-color: black;
     line-height: clamp(30px,4vh,1vw);
     margin: 10vh 5% 5vh 5%;
     font-size: clamp(12px,1.5vw,100px);
-    min-width: 300px;
+    min-width: 250px;
     width: 50%;
+    max-width: 80%;
     box-sizing: content-box;
-    
 }
 /* DETALJNIJE */
 
@@ -777,18 +780,18 @@ background-color: black;
         top: -20%;
         right: -10%;
         width: 120%;
-        height: .2vh;
+        height: .25vh;
     }
     50%{
         top: -20%;
         right: -10%;
-        width: .2vh;
-        height: .2vh;
+        width: .25vh;
+        height: .25vh;
 
     }
     100%{
         right: -10%;
-        width: .2vh;
+        width: .25vh;
         top:0;
         height: 100%;
     }
@@ -798,18 +801,18 @@ background-color: black;
         top: 120%;
         left: -10%;
         width: 120%;
-        height: .2vh;
+        height: .25vh;
     }
     50%{
         top: 120%;
         left: -10%;
-        width: .2vh;
-        height: .2vh;
+        width: .25vh;
+        height: .25vh;
 
     }
     100%{
         left: -10%;
-        width: .2vh;
+        width: .25vh;
         top:0%;
         height: 100%;
     }
