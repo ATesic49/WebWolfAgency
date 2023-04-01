@@ -792,7 +792,7 @@ background-color: black;
 /* SERVICE */
 /* CONTACT */
 .contact{
-    padding: 10vh 0;
+    padding-bottom: 10vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -846,7 +846,7 @@ margin-right: clamp(20px,7.5vh,5vw);
 /* CONTACT */
 /* FOOTER */
 .footer{
-    padding-block:clamp(25px,5vh,5vw) 2vh;
+    padding-block:clamp(3vw,5vh,5vw) 2vh;
     background-color:#0c1445;
     display: flex;
     flex-direction: column;
@@ -881,10 +881,7 @@ margin-right: clamp(20px,7.5vh,5vw);
     align-items: center;
 }
 .footer .logo a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: min-content;
 }
 .footer .logo img{
     width: 2.5%;

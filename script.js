@@ -123,6 +123,10 @@ li[1].addEventListener('click',()=>{
     document.querySelector('.services').scrollIntoView()
 
 })
+li[2].addEventListener('click',()=>{
+    document.querySelector('.constact').scrollIntoView()
+
+})
 document.querySelector('.wrapper .click a').addEventListener('click',()=>{
     document.querySelector('.about').scrollIntoView()
 })
@@ -152,6 +156,12 @@ if(isInViewport(document.querySelector('.services'))){
     e.classList.remove('underline')
 })
 li[1].classList.add('underline')
+}
+if(isInViewport(document.querySelector('.contact'))){
+    li.forEach(e=>{
+    e.classList.remove('underline')
+})
+li[2].classList.add('underline')
 }
 })
 
