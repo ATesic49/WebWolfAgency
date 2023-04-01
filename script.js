@@ -124,7 +124,7 @@ li[1].addEventListener('click',()=>{
 
 })
 li[2].addEventListener('click',()=>{
-    document.querySelector('.constact').scrollIntoView()
+    document.querySelector('.contact').scrollIntoView()
 
 })
 document.querySelector('.wrapper .click a').addEventListener('click',()=>{
