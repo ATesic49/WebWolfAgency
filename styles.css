@@ -557,6 +557,7 @@ pointer-events: none !important;
 .services{
     background-color: hsl(0, 0%, 98.7%);
     padding: 30vh 3.5vw;
+    padding-bottom: 10vh;
     width: 100%;
 }
 .services .text h1{
@@ -792,7 +793,7 @@ background-color: black;
 /* SERVICE */
 /* CONTACT */
 .contact{
-    padding-bottom: 10vh;
+    padding-block: 10vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -831,6 +832,8 @@ background-color: black;
     margin-left: clamp(10px,10vh,4vw);
     margin-left: clamp(10px,10svh,4vw);
     min-width: 250px;
+    text-align: center;
+    max-width: 600px;
 }
 
 .contact .calendar .calendar-uzi{

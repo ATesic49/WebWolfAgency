@@ -165,7 +165,9 @@ li[2].classList.add('underline')
 }
 })
 
-
+document.querySelector('.book').addEventListener('click',()=>{
+    document.querySelector('.contact').scrollIntoView()
+})
 
 // IS IN WIEWPORT
 
