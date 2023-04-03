@@ -342,7 +342,7 @@ transform: translateZ(-50px) scale(6);
     left: 0;
     height: 100%;
     display: flex;
-    width: 70%;
+    width: 60%;
     transform: translateZ(-100px) scale(11);    
     text-align: center;
     align-items: center;
@@ -350,9 +350,9 @@ transform: translateZ(-50px) scale(6);
 .wrapper .text h2{
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     font-weight: 900;
-    font-size: clamp(20px,5vw,30vh);
+    font-size: clamp(20px,4.5vw,20vh);
     text-align: center;
     color: white;
     user-select: none;
@@ -457,7 +457,7 @@ animation: click .5s linear forwards;
 
 }
 .about .text p{
-    line-height: (20px,5vh,4vw);
+    line-height: clamp(20px,5vh,5vw);
     margin: 10vh 5% 5vh 5%;
     font-size: clamp(12px,1.5vw,20px);
 }
