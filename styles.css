@@ -102,9 +102,11 @@ nav ul li:hover::after{
 }
 
 
-
-
 /* WRAPPER */
+
+
+
+
 .wrapper{
     height: 10vh;
     height: 100svh;
@@ -909,6 +911,112 @@ margin-right: clamp(20px,7.5vh,5vw);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+.mobile{
+display: none;
+padding-top:20vh ;
+padding-top:20svh;
+}
+
+.mobile h1{
+position: absolute;
+top: 17.5%;
+left:8.325vw;
+width: 65%;
+font-style: italic;
+}
+.mobile .vuk{
+    position: absolute;
+    top: 42.5%;
+    left: 3.5vw;
+    width: 35%;
+
+}
+.mobile .mesec{
+    position: absolute;
+    top:25%;
+    right: 5vw;
+    width: 35%;
+    width: 25%;
+    z-index: -1;
+}
+
+
+
+
+.mobile button {
+position: relative;
+font-size: clamp(12px,.3vw,25px);
+background-color :#4c408e;
+box-shadow: 0 0 5px #4c408e;
+font-weight: 900;
+text-align: center;
+color: white;
+user-select: none;
+font-family: 'Josefin Sans', sans-serif;
+text-decoration: none;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-inline: auto;
+min-width: 55px;
+width: 20%;
+box-sizing: content-box;
+aspect-ratio: 2.2/1;
+border: none;
+margin-top: 80%;
+margin-left: 50%;
+
+}
+.mobile button:hover{
+    background-color: white;
+    color: #4c408e;
+}
+.mobile button:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2%;
+    top: -20%;
+    right: 0;
+    background-color: #4c408e;
+    animation: click .5s ease-in forwards reverse;
+
+    
+}
+.mobile button:hover::before{
+position: absolute;
+content: '';
+width: 100%;
+height: 2%;
+top: 120%;
+right: 0;
+background-color: #4c408e;
+animation: Bclick .5s ease-in forwards reverse;
+        
+        }
+
+
+
+
+/* MOBILE */
+
+
 /* MEDIA */
 @media only screen and (max-width: 600px) {
     .contact .calendar{
@@ -928,7 +1036,13 @@ margin-right: clamp(20px,7.5vh,5vw);
 .wrapper{
     display: none;
 }
-
+.mobile{
+    display: block;
+}
+.about{
+    padding-top: 15vh;
+    padding-top: 15svh;
+}
 }
 /* MEDIA */
 /* KEYFRAMES */
