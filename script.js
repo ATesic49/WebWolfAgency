@@ -96,7 +96,9 @@ window.addEventListener('scroll',()=>{
 
     }
 })
-
+document.querySelector('.mobile button').addEventListener('click',()=>{
+    document.querySelector('.about').scrollIntoView()
+})
 
 
 
