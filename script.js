@@ -176,14 +176,18 @@ document.querySelector('.book').addEventListener('click',()=>{
 
 
 
-// FUNCTIONS    
+// FUNCTIONS
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-   
+
     return (
         rect.top <= (window.innerHeight/2 || document.documentElement.clientHeight/2) &&
-        rect.bottom >=  (window.innerHeight/2 || document.documentElement.clientHeight/2) 
-        
+        rect.bottom >=  (window.innerHeight/2 || document.documentElement.clientHeight/2)
+
     );
   }
 // FUNCTIONS
+
+
+
+// IMEJL    

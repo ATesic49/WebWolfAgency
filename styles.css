@@ -340,19 +340,19 @@ transform: translateZ(-50px) scale(6);
 
 .wrapper .text{
     position: absolute;
-    top: 0%;
-    left: 0;
+    top: 100%;
+    left: 125%;
     height: 100%;
     display: flex;
     width: 60%;
+    height: auto;
     transform: translateZ(-100px) scale(11);    
     text-align: center;
     align-items: center;
+    justify-content: center;
+
 }
 .wrapper .text h2{
-    position: absolute;
-    top: 50%;
-    left: 35%;
     font-weight: 900;
     font-size: clamp(20px,4.5vw,20vh);
     text-align: center;
@@ -371,7 +371,7 @@ transform: translateZ(-50px) scale(6);
 .wrapper .click a{
 position: absolute;
 top: 70%;
-left: 59%;
+left: 60%;
 transform: translateX(-50%);
 background-color :hsl(39, 96%, 45%);
 box-shadow: 0 0 5px #4c408e;
@@ -888,6 +888,7 @@ margin-right: clamp(20px,7.5vh,5vw);
 .footer .logo a{
     width: 2.5%;
     min-width: 25px;
+    position: relative;
 }
 .footer .logo img{
     width: 100%;
@@ -900,9 +901,7 @@ margin-right: clamp(20px,7.5vh,5vw);
     cursor: pointer;
 }
 
-
-
-    /* FOOTER */
+/* FOOTER */
 
 
 
@@ -931,7 +930,6 @@ display: none;
 padding-top:20vh ;
 padding-top:20svh;
 }
-
 .mobile h1{
 position: absolute;
 top: 17.5%;
@@ -954,10 +952,6 @@ font-style: italic;
     width: 25%;
     z-index: -1;
 }
-
-
-
-
 .mobile button {
 position: relative;
 font-size: clamp(12px,.3vw,25px);
@@ -1010,10 +1004,6 @@ background-color: #4c408e;
 animation: Bclick .5s ease-in forwards reverse;
         
         }
-
-
-
-
 /* MOBILE */
 
 
