@@ -515,6 +515,13 @@ color: #0c1445;
     background-repeat: no-repeat;
     background-image: url(/img/viber_image_2022-12-28_23-44-27-516.jpg);
     position:relative;
+    background-position: center;
+}
+.about .team .slike .img:nth-child(2){
+    background-image:url(/img/dusan2.jpg) ;
+}
+.about .team .slike .img:nth-child(3){
+    background-image:url(/img/filipJokic.jpg) ;
 }
 .about .team .slike .img .hover{
     position: absolute;
@@ -634,7 +641,6 @@ pointer-events: none !important;
     margin-top: 3%;
     font-size:clamp(2vh,1.75vw,18px);
     color: #0c1445;
-
 
 }
 .services .packages .package .stvari{
