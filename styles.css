@@ -638,10 +638,18 @@ pointer-events: none !important;
 }
 .services .packages .package .naslov h3{
     font-style:italic;
+    position: relative;
     margin-top: 3%;
     font-size:clamp(2vh,1.75vw,18px);
     color: #0c1445;
 
+}
+.services .packages .package .naslov h3::after{
+content: '/mo.';
+color: #0c1445;
+top: 50%;
+left: 60%;
+transform:translateY(-50%);
 }
 .services .packages .package .stvari{
     width: 100%;
