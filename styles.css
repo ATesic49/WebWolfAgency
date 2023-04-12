@@ -935,6 +935,11 @@ margin-right: clamp(20px,7.5vh,5vw);
 display: none;
 padding-top:20vh ;
 padding-top:20svh;
+padding-bottom: 5vh;
+padding-bottom: 5svh;
+background-image:linear-gradient(180deg,#0c1445 ,#4c408e);
+margin-bottom: -0px;
+
 }
 .mobile h1{
 position: absolute;
@@ -942,6 +947,7 @@ top: 17.5%;
 left:8.325vw;
 width: 65%;
 font-style: italic;
+color: white;
 }
 .mobile .vuk{
     position: absolute;
@@ -956,7 +962,7 @@ font-style: italic;
     right: 5vw;
     width: 35%;
     width: 25%;
-    z-index: -1;
+    z-index: 1;
 }
 .mobile button {
 position: relative;
@@ -981,6 +987,7 @@ aspect-ratio: 2.2/1;
 border: none;
 margin-top: 70%;
 margin-left: 55%;
+box-shadow: 0 0 2px white;
 
 }
 .mobile button:hover{
@@ -994,7 +1001,7 @@ margin-left: 55%;
     height: 2%;
     top: -20%;
     right: 0;
-    background-color: #4c408e;
+    background-color: white;
     animation: click .5s ease-in forwards reverse;
 
     
@@ -1006,10 +1013,14 @@ width: 100%;
 height: 2%;
 top: 120%;
 right: 0;
-background-color: #4c408e;
+background-color: white;
 animation: Bclick .5s ease-in forwards reverse;
         
         }
+.esvidji{
+display: none;
+margin-top: -   1px;
+}
 /* MOBILE */
 
 
@@ -1033,6 +1044,9 @@ animation: Bclick .5s ease-in forwards reverse;
     display: none;
 }
 .mobile{
+    display: block;
+}
+.esvidji{
     display: block;
 }
 .about{
