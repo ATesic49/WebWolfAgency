@@ -946,7 +946,7 @@ padding-top:20svh;
 padding-bottom: 5vh;
 padding-bottom: 5svh;
 background-image:linear-gradient(180deg,#0c1445 ,#4c408e);
-margin-bottom: -0px;
+margin-bottom: -1.2px;
 
 }
 .mobile h1{
@@ -997,7 +997,6 @@ margin-bottom: 20%;
 margin-left: 62%;
 box-shadow: 0 0 2px white;
 padding: .5vh;
-
 }
 .mobile button:hover{
     background-color: white;
