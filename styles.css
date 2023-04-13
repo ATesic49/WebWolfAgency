@@ -79,7 +79,7 @@ nav ul li{
     padding: 2vh 1.5vh;
     color: white;
     border-radius: 10px;
-    font-size: clamp(20px, 1.5vw, 25px);
+    font-size: clamp(10px, 1.75vw, 25px);
     margin: 0 .5vh;
     position: relative;
 }
@@ -951,7 +951,7 @@ margin-bottom: -0px;
 }
 .mobile h1{
 position: absolute;
-top: 17.5%;
+top: 27.5%;
 left:8.325vw;
 width: 65%;
 font-style: italic;
@@ -961,15 +961,14 @@ color: white;
     position: absolute;
     top: 42.5%;
     left: 3.5vw;
-    width: 35%;
+    width: 30%;
 
 }
 .mobile .mesec{
     position: absolute;
-    top:25%;
+    top:12.5%;
     right: 5vw;
-    width: 35%;
-    width: 25%;
+    width: 22.5%;
     z-index: 0;
 }
 .mobile button {
