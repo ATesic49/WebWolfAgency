@@ -992,10 +992,11 @@ width: 20%;
 box-sizing: content-box;
 aspect-ratio: 2.2/1;
 border: none;
-margin-top: 52%;
+margin-top: 50%;
 margin-bottom: 20%;
 margin-left: 62%;
 box-shadow: 0 0 2px white;
+padding: .5vh;
 
 }
 .mobile button:hover{
