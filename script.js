@@ -190,4 +190,17 @@ function isInViewport(element) {
 
 
 
-// IMEJL    
+// IMEJL 
+
+
+// scroll
+let skrolovanje = 0
+window.addEventListener('scroll',()=>{
+   
+    if(skrolovanje >  window.scrollY && window.innerWidth<500){
+        nav.style.top='-100%'
+    }else{
+        nav.style.top='0'
+    }
+    skrolovanje = window.scrollY
+})
