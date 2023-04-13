@@ -967,7 +967,7 @@ color: white;
 .mobile .mesec{
     position: absolute;
     top:12.5%;
-    right: 5vw;
+    right: 10vw;
     width: 22.5%;
     z-index: 0;
 }
