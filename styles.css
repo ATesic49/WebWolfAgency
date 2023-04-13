@@ -79,7 +79,7 @@ nav ul li{
     padding: 2vh 1.5vh;
     color: white;
     border-radius: 10px;
-    font-size: clamp(10px, 1.5vw, 25px);
+    font-size: clamp(20px, 1.5vw, 25px);
     margin: 0 .5vh;
     position: relative;
 }
@@ -354,7 +354,7 @@ transform: translateZ(-50px) scale(6);
 }
 .wrapper .text h2{
     font-weight: 900;
-    font-size: clamp(20px,4.5vw,20vh);
+    font-size: clamp(20px,4.5vw,30vh);
     text-align: center;
     color: white;
     user-select: none;
@@ -390,7 +390,7 @@ display: flex;
 font-weight: 400;
 display: none;
 aspect-ratio: 2.2/1;
-font-size: clamp(15px,1.5vw,25px);
+font-size: clamp(15px,1.5vw,35px);
 width: 7.5%;
 min-width: 100px;
 padding:0vw .5vw;
@@ -455,13 +455,13 @@ animation: click .5s linear forwards;
     left: 0;
     width: 100%;
     height: 2px;
-    height: clamp(1px,.4vh,.4vw);
+    height: clamp(1px,.4vh,.5vw);
 
 }
 .about .text p{
     line-height: clamp(20px,5vh,5vw);
     margin: 10vh 5% 5vh 5%;
-    font-size: clamp(12px,1.5vw,20px);
+    font-size: clamp(12px,1.5vw,30px);
 }
 
 
@@ -474,7 +474,7 @@ animation: click .5s linear forwards;
     margin-top: 10vh;
 }
 .about .team h3{
-font-size: clamp(3vh,3.25vw,25px);
+font-size: clamp(3vh,3.25vw,35px);
 margin-bottom: 7.5vh;
 margin-bottom: 7.5svh;
 position: relative;
@@ -589,7 +589,7 @@ pointer-events: none !important;
 .services .text p{
     line-height: clamp(20px,5vh,5vw);
     margin: 10vh 5% 5vh 5%;
-    font-size: clamp(12px,1.5vw,20px);
+    font-size: clamp(12px,1.5vw,30px);
 }
 .services .packages{
     display: flex;
@@ -633,14 +633,14 @@ pointer-events: none !important;
 }
 .services .packages .package .naslov h1{
     font-style:italic;
-    font-size:clamp(2.5vh,2vw,20px);
+    font-size:clamp(2.5vh,2vw,35px);
     color: #0c1445;
 }
 .services .packages .package .naslov h3{
     font-style:italic;
     position: relative;
     margin-top: 3%;
-    font-size:clamp(2vh,1.75vw,18px);
+    font-size:clamp(2vh,1.75vw,35px);
     color: #0c1445;
 
 }
@@ -677,7 +677,7 @@ margin: 5% 7.5% 5% 7.5% ;
 .services .packages .package .stvari .stvar p{
     color: white;
     font-style: italic;
-    font-size: clamp(1.5vh,1.2vw,20px);
+    font-size: clamp(1.5vh,1.2vw,30px);
     font-weight: 800;
     margin-right: 2%;
 }
@@ -692,7 +692,7 @@ margin: 5% 7.5% 5% 7.5% ;
 }
 .services .book a{
 position: relative;
-font-size: clamp(15px,.5vw,25px);
+font-size: clamp(15px,.5vw,35px);
 background-color :#4c408e;
 box-shadow: 0 0 5px #4c408e;
 font-weight: 900;
@@ -774,7 +774,7 @@ text-align: center;
 }
 .services .detaljnije .stvar .levo h2{
     margin-bottom: 7vh;
-    font-size:clamp(2vh,1.75vw,30px);
+    font-size:clamp(2vh,1.75vw,35px);
     width: 70%;
     position: relative;
 
@@ -799,7 +799,7 @@ background-color: black;
 .services .detaljnije .stvar p{
     line-height: clamp(20px,5vh,4vw);
     margin: 10vh 5% 5vh 5%;
-    font-size: clamp(12px,1.5vw,20px);
+    font-size: clamp(12px,1.5vw,30px);
     min-width: 200px;
     width: 50%;
     max-width: 80%;
@@ -819,7 +819,7 @@ background-color: black;
 }
 .contact h1 {
     position: relative;
-    font-size:clamp(3vh,2.5vw,30px);
+    font-size:clamp(3vh,2.5vw,40px);
     margin-bottom: 15vh;
 }
 .contact h1::after{
@@ -844,7 +844,7 @@ background-color: black;
 .contact .calendar p{
     width: 45%;
     line-height: clamp(20px,5vh,5vw);
-    font-size: clamp(12px,1.5vw,20px);
+    font-size: clamp(12px,1.5vw,30px);
     margin-left: clamp(10px,10vh,4vw);
     margin-left: clamp(10px,10svh,4vw);
     min-width: 200px;
@@ -874,7 +874,7 @@ margin-right: clamp(20px,7.5vh,5vw);
 }
 .footer h4{
     color: white;
-    font-size: clamp(5px,4vw,20px);
+    font-size: clamp(5px,4vw,30px);
     max-width: 80%;
     text-align: center;
 }
@@ -974,7 +974,7 @@ color: white;
 }
 .mobile button {
 position: relative;
-font-size: clamp(12px,.3vw,25px);
+font-size: clamp(12px,.3vw,35px);
 background-color :#4c408e;
 box-shadow: 0 0 5px #4c408e;
 font-weight: 900;
