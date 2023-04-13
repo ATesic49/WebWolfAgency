@@ -791,8 +791,10 @@ text-align: center;
 content: '';
 position: absolute;
 top: 120%;
-right: 35%;
+right: 50%;
+transform: translateX(50%);
 width: 30%;
+min-width: 75px;
 height: 2px;
 background-color: black;
 }
