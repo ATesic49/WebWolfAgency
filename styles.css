@@ -940,6 +940,7 @@ margin-right: clamp(20px,7.5vh,5vw);
 
 /* MOBILE */
 .mobile{
+position: relative;
 display: none;
 padding-top:20vh ;
 padding-top:20svh;
@@ -951,7 +952,7 @@ margin-bottom: -2px;
 }
 .mobile h1{
 position: absolute;
-top: 27.5%;
+top: 42.5%;
 left:8.325vw;
 width: 65%;
 font-style: italic;
@@ -959,15 +960,15 @@ color: white;
 }
 .mobile .vuk{
     position: absolute;
-    top: 45%;
+    bottom: 10%;
     left: 3.5vw;
     width: 30%;
 
 }
 .mobile .mesec{
     position: absolute;
-    top:12.5%;
-    right: 10vw;
+    top:20%;
+    right: 15vw;
     width: 22.5%;
     z-index: 0;
 }
