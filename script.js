@@ -200,7 +200,7 @@ window.addEventListener('scroll',()=>{
     if(skrolovanje >  window.scrollY && window.innerWidth<500){
         nav.style.top='-100%'
     }else{
-        nav.style.top='5%'
+        nav.style.top='0'
     }
     skrolovanje = window.scrollY
 })
