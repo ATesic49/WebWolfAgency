@@ -198,9 +198,9 @@ let skrolovanje = 0
 window.addEventListener('scroll',()=>{
    
     if(skrolovanje >  window.scrollY && window.innerWidth<500){
-        nav.style.top='-100%'
+        nav.style.position='absolute'
     }else{
-        nav.style.top='0'
+        nav.style.position='fixed'
     }
     skrolovanje = window.scrollY
 })
