@@ -523,6 +523,9 @@ color: #0c1445;
 .about .team .slike .img:nth-child(3){
     background-image:url(/img/filipJokic.jpg) ;
 }
+.about .team .slike .img:nth-child(4){
+    background-image:url(/img/pavleGoran.jpg) ;
+}
 .about .team .slike .img .hover{
     position: absolute;
     width: 100%;
