@@ -8,7 +8,6 @@ scroll-behavior: smooth;
 body{
 z-index: -4;
 font-family: 'Josefin Sans', sans-serif;
-
 }
 .stop{
     overflow: hidden;
@@ -42,16 +41,16 @@ nav{
     width: 100%;
     align-items: center;
     padding:1vh 5% 1vh 3.5vw;
-    z-index: 1;
+    z-index: 10 !important;
 }
 .underline::after{
     position: absolute;
     content: '';
     bottom:10%;
-    left: 0;
+    left: 10%;
     background-color: white;
     height: 2px;
-    width: 100%;
+    width: 80%;
 }
 .pozadina-nava{
     background-image:linear-gradient(90deg,#0c1445 ,#4c408e);
@@ -61,8 +60,8 @@ nav{
 }
 nav img{
 min-height: 25px;
-height:5vw;
-max-height: 100px;
+height:4vw;
+max-height:75px;
 z-index: 2;
 }
 nav img:hover{
@@ -95,10 +94,10 @@ nav ul li:hover::after{
     position: absolute;
     content: '';
     bottom:10%;
-    left: 0;
+    left: 10%;
     height: 2px;
     background-color: white;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -513,7 +512,7 @@ color: #0c1445;
     min-width: 150px;
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url(/img/viber_image_2022-12-28_23-44-27-516.jpg);
+    background-image: url(/img/Aleksa.jpg);
     position:relative;
     background-position: center;
 }
@@ -813,6 +812,84 @@ background-color: black;
 /* DETALJNIJE */
 
 /* SERVICE */
+
+
+
+
+/* PORTFOLIO */
+#portfolio{
+    background-color: hsl(0, 0%, 98.7%);
+    padding: 30vh 3.5vw;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+#portfolio h1{
+    position: relative;
+    text-align: center;
+    padding-block: 0.5vh;
+    font-size: clamp(20px,3.5vw,40px);
+    margin-bottom:15vh; 
+    color: #0c1445;
+    width: fit-content;
+    margin-inline: auto;
+    height: auto;
+    }
+
+    
+#portfolio h1::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: clamp(1px,0.4vh,0.5vw);
+}
+.portfolio{
+    background-color: hsl(0, 0%, 98.7%) !important;
+    padding-bottom: 10vh !important;
+    display: flex !important ;
+    flex-direction: column;
+    margin-bottom: 10vh !important;
+    box-sizing: content-box !important;
+    align-items: center;
+    
+    
+}
+
+.portfolio iframe{
+    box-sizing: content-box;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    height: 80vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+
+
+    background-color: #4c408e;
+}
+/* PORTFOLIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CONTACT */
 .contact{
     padding-block: 20vh;
@@ -1148,3 +1225,5 @@ margin-top: -   1px;
 }
 
 /* KEYFRAMES */
+
+

@@ -118,7 +118,7 @@ li.forEach(element=>{
 
 
 
-li[0].addEventListener('click',()=>{
+li[0].addEventListener('click',()=>{iframe
     document.querySelector('.about').scrollIntoView()
 })
 li[1].addEventListener('click',()=>{
@@ -126,7 +126,7 @@ li[1].addEventListener('click',()=>{
 
 })
 li[2].addEventListener('click',()=>{
-    document.querySelector('.contact').scrollIntoView()
+    document.querySelector('#portfolio').scrollIntoView()
 
 })
 document.querySelector('.wrapper .click a').addEventListener('click',()=>{
@@ -159,7 +159,7 @@ if(isInViewport(document.querySelector('.services'))){
 })
 li[1].classList.add('underline')
 }
-if(isInViewport(document.querySelector('.contact'))){
+if(isInViewport(document.querySelector('#portfolio'))){
     li.forEach(e=>{
     e.classList.remove('underline')
 })
@@ -204,3 +204,14 @@ window.addEventListener('scroll',()=>{
     }
     skrolovanje = window.scrollY
 })
+
+// SWIPER
+var swiper = new Swiper(".mySwiper", {
+    direction: "horizontal",
+    loop:'true',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+// SWIPER
