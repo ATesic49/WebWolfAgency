@@ -47,10 +47,12 @@ nav{
     position: absolute;
     content: '';
     bottom:10%;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     height: 2px;
     width: 80%;
+
 }
 .pozadina-nava{
     background-image:linear-gradient(90deg,#0c1445 ,#4c408e);
@@ -94,10 +96,13 @@ nav ul li:hover::after{
     position: absolute;
     content: '';
     bottom:10%;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 2px;
     background-color: white;
     width: 80%;
+    animation: iz-sredine .2s ease-in forwards;
+
 }
 
 
@@ -1147,6 +1152,17 @@ margin-top: -   1px;
 }
 /* MEDIA */
 /* KEYFRAMES */
+@keyframes iz-sredine {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+
+
 @keyframes click {
     0%{
         top: -20%;

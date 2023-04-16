@@ -118,7 +118,7 @@ li.forEach(element=>{
 
 
 
-li[0].addEventListener('click',()=>{iframe
+li[0].addEventListener('click',()=>{
     document.querySelector('.about').scrollIntoView()
 })
 li[1].addEventListener('click',()=>{
