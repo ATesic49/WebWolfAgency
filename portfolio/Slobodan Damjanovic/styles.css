@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Gloock;
+    --font-size-small:12px;
+    --font-size-mid:15px;
+    --font-size-large:18px;
+    --font-size-xlarge:25px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+      
+/* NAVIGATION */
+nav{
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    transition: .2s;
+    background-image: linear-gradient(to right,#603d05,#603d05,#603d05,#8b5908,#8b5908);
+    height:15vh;
+    height:15svh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2.5% 10px  5%;
+    width: 100%;
+    max-height: 100px;
+    box-sizing: border-box;
+}
+.backgroundImageNone{
+   background-image: none;
+   height: 14vh;
+   height: 14svh;
+   transition: .2s;
+}
+nav .logo{
+   margin: 10px 0 ;
+}
+nav .logo img{
+    height: 10vh;
+    height: 10svh;
+    max-height: 50px;
+}
+nav .logo img:hover{
+    cursor: pointer;
+    filter: brightness(0) drop-shadow(0 0 10px white);
+}
+nav .text{
+    width:70%;
+    max-width:750px
+}
+nav .text ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+    width: 100%;
+}
+
+nav .text ul li a{
+text-decoration: none;
+border-radius: 5px;
+color: white;
+padding: 15px 20px;
+font-size: var(--font-size-mid);
+font-weight: 200;
+
+}
+
+nav .text ul li a:hover{
+    box-shadow: 0px 4px 2px -3px black;
+
+}
+nav .text ul li .active{
+    box-shadow: 0px 4px 2px -3px black;
+    background-color:#602605 !important;
+
+}
+.backgroundImageNone li a:hover{
+    background-color:#602605 !important;
+
+
+}
+nav #options{
+    height: 7.5vh;
+    height: 7.5svh;
+    max-height: 35px;
+    margin-right: 10px;
+    display: none;
+}
+nav #options:hover{
+    cursor: pointer;
+    filter: brightness(0) drop-shadow(0 0 10px white);
+}
+nav .navZaTel ul li a{
+font-size: 7px !important;
+padding: 4px 10px; 
+margin-right: -100%;
+
+}
+nav .navZaTel{
+    animation: from-right-to-center .25s linear forwards !important;
+}
+
+/* NAVIGATION */
+/* POCETNA */
+#pocetna {
+width: 100%;
+}
+#pocetna h1{
+font-size: clamp(2rem,4vw,4rem);
+
+}
+#pocetna p{
+    font-size: clamp(1px,3vw,3rem);
+
+
+}
+#pocetna img{
+width: 100%;
+filter: brightness(.7);
+}
+
+
+/* SWIPER */
+.swiper {
+    width: 100%;
+    aspect-ratio: 709/374;
+    top: 7vh;
+    right: 0;   
+    position: absolute !important;
+    background-color: transparent !important;
+
+  }
+
+  #swiper-wrapper{
+    height: 100vh;
+    height: 100svh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .swiper-slide {
+    user-select: none;
+    background-color: transparent !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white;
+  }
+.swiper-slide div{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.swiper-slide div h1{
+    font-size: 50px;
+}
+.swiper-slide div p{
+    font-size: 25px;
+    margin:10% 0;
+
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #603d05;
+}
+.swiper-pagination-bullet{
+    opacity:var(--swiper-pagination-bullet-inactive-opacity, 1) ;
+    margin:5%
+}
+.swiper-pagination{
+    position: absolute !important;
+    bottom: 5% !important;
+    left: 50% ;
+    transform: translateX(50%);
+}
+/* SWIPER */
+
+/* POCETNA */
+
+
+/* O NAMA */
+#onama{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:12vh;
+    padding-top:12svh;
+}
+#onama .naslov h1{
+   position: relative;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-top: 5svh;
+    font-size: var(--font-size-xlarge);
+    text-transform: uppercase;
+    margin-bottom: 30vh;
+    margin-bottom: 30svh;
+
+}
+#onama .naslov h1::after{
+    content: '';
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#onama .onama{
+position: relative;
+width: 100%;
+display: flex;    
+flex-direction: column;
+width: 50%;
+margin-right: auto;
+border-right: 1px solid #602605;
+padding-top:10svh;
+padding-top:10vh;
+}
+#onama .onama:nth-child(odd){
+    margin-left: auto;
+    margin-right:0;
+    border-right: none;
+    border-left: 1px solid #602605;
+}
+#onama .onama:nth-child(odd) .img{
+    left: 0;
+
+}
+#onama .onama .img{
+    z-index: 2;
+    width: 25%;
+    min-width: 120px;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius:100%;
+    border: 5px solid #8b5908;
+    margin-right: 10%;
+    top: -5vh;
+    top: -5svh;
+    left: 100%;
+    transform: translateX(-50%);
+    filter: grayscale(1) contrast(1.5);
+
+}
+#onama .onama .imgActive{
+    cursor: pointer;
+    filter: grayscale(0) contrast(1);
+    transition: .5s;
+
+}
+#onama .onama .img:hover{
+    cursor: pointer;
+    filter: grayscale(0) contrast(1);
+    transition: .2s;
+}
+#onama .onama:nth-child(2) .img{
+    background-image: url(./img/advokat.jpeg) ;
+    }
+#onama .onama:nth-child(3) .img{
+background-image: url(./img/kancelarija.jpeg) ;
+}
+#onama .onama:nth-child(4) .img{
+    background-image: url(./img/grcka.jpeg);
+}
+#onama .onama:nth-child(5) .img{
+    background-image: url(./img/rukovanje.jpeg);
+}
+#onama .onama .nijeSlika{
+    margin-top:20vh ;
+    margin-top:20svh;
+    text-align: center;
+    font-size:var(--font-size-mid);
+    line-height: 1.5rem;   
+    margin-inline:10% ; 
+    padding-bottom: 20vh;
+}
+#onama .onama .nijeSlika h2{
+    margin: 10% 0;
+
+}
+#onama .onama .text p{
+    color: hsl(0, 0%, 45%);
+}
+
+/* O NAMA */
+/* USLUGE */
+#usluge{
+    padding-top:12vh;
+    padding-top:12svh;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+
+}
+#usluge .naslov{
+    width: 100%;
+}
+#usluge .naslov h1{
+    position: relative;
+    text-align: center;
+    font-size: var(--font-size-xlarge);
+    margin-top: 5vh;
+    margin-top: 5svh;
+    margin-bottom: 27.5vh;
+    margin-bottom: 27.5svh;
+    padding: 2.5vh;
+
+}
+#usluge .naslov h1::after{
+    content: '';
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#usluge .nijenaslov{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#usluge .nijenaslov .usluge{
+    width: 15%;
+    min-width: 150px;
+    margin-left: 5%;
+    text-align: center;
+
+}
+#usluge .nijenaslov img{
+    width: 100%;
+    margin-bottom:5vh;
+    filter: brightness(0);
+}
+#usluge .nijenaslov .usluge:hover img{
+    filter: brightness(1) drop-shadow( 0 0 5px black);
+}
+#usluge .nijenaslov h3{
+    font-size:var(--font-size-xlarge);
+    margin-bottom: 4vh;
+}
+#usluge .nijenaslov p{
+    font-size:var(--font-size-mid);
+    margin-bottom: 10vh;
+    color: hsl(0, 0%, 45%);
+    font-style: italic;
+
+}
+/* USLUGE */
+/* CENOVNIK */
+#cenovnik{
+    padding-top:12vh;
+    padding-top:12svh;
+    width: 100%;
+    padding-bottom: 30vh;
+    padding-bottom: 30svh;
+
+}
+#cenovnik .naslov{
+    width: 100%;
+    text-align: center;
+}
+#cenovnik .naslov h1{
+    position: relative;
+    font-size: var(--font-size-xlarge);
+    margin-top: 5vh;
+    margin-top: 5svh;
+    margin-bottom: 7.5vh;
+    margin-bottom: 7.5svh;
+    padding: 2.5vh;
+
+}
+#cenovnik .naslov h1::after{
+    content: '';
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#cenovnik .cenovnik{
+    display: flex;
+    padding-top:12vh ;
+    padding-top:12svh ;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#cenovnik .cenovnik .levo{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-width: 250px;
+
+}
+#cenovnik .cenovnik .levo img{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 5px solid #8b5908;
+}
+#cenovnik .cenovnik .desno{
+    width: 65%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 600px;
+
+}
+#cenovnik .cenovnik .desno .text{
+width: 100%;
+margin-top: 15vh;
+margin-top: 15svh;
+text-align: center;
+color: hsl(0, 0%, 45%);
+}
+
+/* CENOVNIK */
+
+/* KONTAKT */
+#kontakt{
+    background-color: hsl(0, 0%, 8%);
+    padding-top:12vh;
+    padding-top:12svh;
+    width: 100%;
+
+}
+#kontakt .naslov{
+    width: 100%;
+    text-align: center;
+}
+#kontakt .naslov h1{
+    position: relative;
+    font-size: var(--font-size-xlarge);
+    margin-top: 5vh;
+    margin-top: 5svh;
+    margin-bottom: 7.5vh;
+    margin-bottom: 7.5svh;
+    padding: 2.5vh;
+    color: white;
+
+}
+#kontakt .naslov h1::after{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#kontakt .kontakt{
+    margin-top: 12vh;
+    margin-top: 12svh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 12vh;
+    align-items: center;
+}
+#kontakt .kontakt .levo{
+    width: 50%;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+#kontakt .kontakt .levo div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:flex-start;
+    height: auto;
+    width: 50%;
+    max-width: 600px;
+    min-width: 150px;
+    margin-bottom: 8vh;
+    text-align: center;
+}
+
+#kontakt .kontakt .levo div a{
+  font-size:var(--font-size-large);
+  text-decoration: none;
+  color: white;
+}
+
+#kontakt .kontakt .levo div:hover img{
+    filter: invert(27%) sepia(41%) saturate(7288%) hue-rotate(44deg) brightness(95%) contrast(94%);
+
+}
+#kontakt .kontakt .levo img{
+    width: 2rem;
+    margin-right: 15%;
+    filter: invert(1);
+
+    
+}
+
+#kontakt .kontakt .mapa{
+width: 40%;
+min-width: 300px;
+max-width: 90%;
+aspect-ratio: 1.61/1;
+margin: 0;
+padding: 0;
+}
+#kontakt .kontakt .mapa iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* KONTAKT */
+
+
+
+/* MEDIA */
+@media only screen and (max-width: 670px){
+    nav .text ul li a{
+        font-size: var(--font-size-small);
+        padding: 8px 12px;
+    }
+}
+@media only screen and (max-width: 600px) {
+.naslov h1{
+    font-size: var(--font-size-large);
+}
+#usluge .nijenaslov h3{
+    font-size: var(--font-size-mid);
+}
+nav #options{
+    display: block;
+}
+*{
+    font-size:10px;
+  }
+  #onama .onama .img{
+    border-width: 2px;
+  }
+  #kontakt .kontakt{
+    margin-top: 12vh;
+    margin-top: 12svh;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 12vh;
+    align-items: center;
+}
+#kontakt .kontakt .levo div a{
+    font-size:var(--font-size-small);
+    text-decoration: none;
+    color: white;
+  }
+  #kontakt .kontakt .mapa{
+    margin:0 auto;
+    min-width: 250px;
+  }
+   nav .text{
+        margin-right: -2000%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #kontakt .kontakt .mapa{
+        margin:0 auto;
+        min-width: 225px;
+      }
+      nav .text ul li a{
+        padding: 10px 6px;
+        font-size: 8px !important;
+    }
+    nav .logo img{
+        height:35px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    nav .text ul li a{
+        padding: 10px 4px;
+
+    }
+}
+
+/* MEDIA */
+/* KEYFRAMES */
+@keyframes from-right-to-center {
+    0%{
+        margin-right: -100%;
+    }
+    75%{
+        margin-right: 50px;
+    }
+    100%{
+        margin-right: 10px;
+
+    }
+}
+/* KEYFRAMES */
