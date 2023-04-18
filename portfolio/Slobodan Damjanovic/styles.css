@@ -496,7 +496,7 @@ color: hsl(0, 0%, 45%);
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 12vh;
-    align-items: center;
+    align-items: stretch;
 }
 #kontakt .kontakt .levo{
     width: 50%;
@@ -537,12 +537,7 @@ color: hsl(0, 0%, 45%);
 }
 
 #kontakt .kontakt .mapa{
-width: 40%;
-min-width: 300px;
-max-width: 90%;
-aspect-ratio: 1.61/1;
-margin: 0;
-padding: 0;
+aspect-ratio: 1/1;
 }
 #kontakt .kontakt .mapa iframe{
     width: 100%;
