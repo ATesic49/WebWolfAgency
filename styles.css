@@ -358,7 +358,7 @@ transform: translateZ(-50px) scale(6);
 }
 .wrapper .text h2{
     font-weight: 900;
-    font-size: clamp(20px,4.5vw,30vh);
+    font-size: clamp(20px,4.5vw,8vh);
     text-align: center;
     color: white;
     user-select: none;
@@ -508,7 +508,7 @@ color: #0c1445;
     width: 15%;
     margin-inline: 2.5%;
     aspect-ratio: 1/1.61;
-    border-radius: 20px;
+    border-radius: .5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -533,7 +533,7 @@ color: #0c1445;
 .about .team .slike .img .hover{
     position: absolute;
     width: 100%;
-    border-radius: 20px;
+    border-radius: .5vh;
     height: 100%;
     background-color: #4c408e;
     right:100%;
@@ -610,7 +610,7 @@ pointer-events: none !important;
     margin-top:10vh; 
     width: 20%;
     aspect-ratio: 1/1.61;
-    border-radius: 20px;
+    border-radius: .5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -865,7 +865,7 @@ background-color: black;
 .portfolio iframe{
     box-sizing: content-box;
     width: 80%;
-    border-radius: 10px;
+    border-radius: .5vh;
     box-shadow: 0 0 10px black;
     height: 80vh;
     margin-left: 50%;
